@@ -32,7 +32,6 @@ def findadjacent(diagram, adjmatrix, char, y, x, prev=''):
                         validedges = '\\'
                     else:
                         validedges = '/'
-                    # if edge not in alph + '# ' + prev:
                     if edge in validedges and edge not in prev:
                         n, m = y + b + b, x + a + a
                         while True:
