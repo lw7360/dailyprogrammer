@@ -7,10 +7,9 @@ def main():
     for line in data:
         sortedline = ''.join(sorted(line))
         reversedline = line[::-1]
-        sortedreverse = ''.join(sorted(reversedline))
         if sortedline == line:
             print line + ' IN ORDER'
-        elif sortedreverse == reversedline:
+        elif sortedline == reversedline:
             print line + ' REVERSE ORDER'
         else:
             print line + ' NOT IN ORDER'
